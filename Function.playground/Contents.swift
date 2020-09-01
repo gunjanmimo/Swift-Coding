@@ -37,3 +37,8 @@ func sumup2(a:Int, b:Int)-> Int{
     return a+b
 }
 print("sum of 3 and 4: ",sumup2(a: 4, b: 3))
+
+func sumup3(_ a:Int,_ b:Int)-> Int{
+    return a+b
+}
+print("sum of 3 and 4: ",sumup3(4,  3))
