@@ -24,7 +24,15 @@ for a  in 1...5{
 }
 //while loop
 var x = 0
-while x<5 {
+while x<3 {
     print("i am while loop")
     x += 1
 }
+
+//repeat same as do while
+var counter  = 5
+repeat {
+    print("i am repeat loop\n")
+    counter = counter - 1
+} while counter>0
+
