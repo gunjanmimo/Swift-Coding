@@ -26,6 +26,9 @@ if c>11 || a<2 {
 else if c==1 && a==4{
     print("c is 1 and a is 4")
 }
+else if c==1 && a != 4{
+        print("c is 1 and a is not  4")
+}
 else{
     print("nothing")
 }
