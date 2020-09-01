@@ -27,7 +27,13 @@ func sub() -> Int{
 print("sub value: ",sub())
 
 //parameter
-func sumup(a:Int, b:Int)-> Int{
+func sumup(arg a:Int, arg2 b:Int)-> Int{
     return a+b
 }
-print("sum of 3 and 4: ",sumup(a: 4, b: 3))
+print("sum of 3 and 4: ",sumup(arg: 4, arg2: 3))
+
+//without arg
+func sumup2(a:Int, b:Int)-> Int{
+    return a+b
+}
+print("sum of 3 and 4: ",sumup2(a: 4, b: 3))
