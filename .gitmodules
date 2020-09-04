@@ -1,0 +1,3 @@
+[submodule "Flappy"]
+	path = Flappy
+	url = https://github.com/fullstackio/FlappySwift.git
