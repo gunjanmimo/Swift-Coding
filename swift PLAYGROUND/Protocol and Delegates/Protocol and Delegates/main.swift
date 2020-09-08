@@ -44,8 +44,23 @@ class Doctor: AdvanceLifeSupport {
 }
 
 
+class Surgeon: Doctor {
+    override func performCPR() {
+        super.performCPR()
+        print("singing staying alive by the BeeGees")
+    }
+    
+    func useElectricDrill() {
+        print("whirrrr...")
+    }
+    
+    
+    
+}
+
+
 let emilio  = EmergencyCallHandeler()
-let pete = Paramedic(handler: emilio)
+let pete = Surgeon(handler: emilio)
 
 emilio.assessSituation()
 emilio.medicalEmergency()
