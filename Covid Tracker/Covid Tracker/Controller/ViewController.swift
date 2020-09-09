@@ -75,22 +75,23 @@ class ViewController: UIViewController, UITextFieldDelegate, CovidDataManagerDel
 //        @IBOutlet weak var deathMData: UILabel!
 //        @IBOutlet weak var totalTestData: UILabel!
 //        @IBOutlet weak var testsMData: UILabel!
+        DispatchQueue.main.async {
+            self.countryData.text = data.country
+            self.caseData.text = String(data.cases)
+        self.todayCaseDaata.text = String(data.todayCases)
+        self.deathData.text = String(data.deaths)
         
-        countryData.text = data.country
-        caseData.text = String(data.cases)
-        todayCaseDaata.text = String(data.todayCases)
-        deathData.text = String(data.deaths)
         
+        self.todayDeathData.text = String(data.todayDeaths)
+        self.recoveryData.text = String(data.recovered)
+        self.activeData.text = String(data.active)
+        self.criticalData.text = String(data.critical)
         
-        todayDeathData.text = String(data.todayDeaths)
-        recoveryData.text = String(data.recovered)
-        activeData.text = String(data.active)
-        criticalData.text = String(data.critical)
-        
-        caseMData.text = String(data.casesPerOneMillion)
-        deathMData.text = String(data.deathsPerOneMillion)
-        totalTestData.text = String(data.totalTests)
-        testsMData.text = String(data.testsPerOneMillion)
+        self.caseMData.text = String(data.casesPerOneMillion)
+        self.deathMData.text = String(data.deathsPerOneMillion)
+        self.totalTestData.text = String(data.totalTests)
+        self.testsMData.text = String(data.testsPerOneMillion)
+    }
     }
     
     func didFailedWithError(_ error:Error){
