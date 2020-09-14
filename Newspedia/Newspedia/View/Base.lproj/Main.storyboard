@@ -182,6 +182,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                 <state key="normal" image="airplane" catalog="system"/>
+                                                <connections>
+                                                    <action selector="travel:" destination="dvh-6Z-yIF" eventType="touchUpInside" id="F6S-3M-UyE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cX1-h9-KOY">
                                                 <rect key="frame" x="336" y="0.0" width="64" height="44"/>

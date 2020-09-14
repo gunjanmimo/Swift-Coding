@@ -39,28 +39,33 @@ class NewsPage: UIViewController {
     
     
     @IBAction func trending(_ sender: Any) {
-        let passingQuery = "&category=business"
+        let passingQuery = "&country=in"
+        print(passingQuery)
     }
     
     
     @IBAction func tech(_ sender: Any) {
          let passingQuery = "&q=tech"
+        print(passingQuery)
     }
     
     
     @IBAction func business(_ sender: Any) {
          let passingQuery =  "&category=business"
+        print(passingQuery)
     }
     
     
     
     @IBAction func travel(_ sender: Any) {
           let passingQuery = "&q=travel"
+        print(passingQuery)
     }
     
     
     @IBAction func lifeStyle(_ sender: Any) {
          let passingQuery = "&q=life"
+        print(passingQuery)
     }
     
     
