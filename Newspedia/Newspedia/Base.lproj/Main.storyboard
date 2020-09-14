@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Split View Controller-->
         <scene sceneID="NTZ-MA-aK5">
             <objects>
-                <viewController id="J6l-hd-3yv" sceneMemberID="viewController">
+                <viewController id="J6l-hd-3yv" customClass="UISplitViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zW9-7R-UEo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,7 +182,35 @@
                     <view key="view" contentMode="scaleToFill" id="nnb-eg-26F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RCl-xr-8JG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="24t-bZ-lno">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9bn-VQ-3GV">
+                                        <rect key="frame" x="0.0" y="68" width="414" height="740"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9bn-VQ-3GV" secondAttribute="trailing" id="dga-5y-aX3"/>
+                                    <constraint firstItem="9bn-VQ-3GV" firstAttribute="leading" secondItem="RCl-xr-8JG" secondAttribute="leading" id="y1U-sm-YLg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RCl-xr-8JG" secondAttribute="bottom" id="0Zm-YE-iSU"/>
+                            <constraint firstItem="RCl-xr-8JG" firstAttribute="top" secondItem="JG8-95-Ac0" secondAttribute="top" id="Ndj-Pf-1cf"/>
+                            <constraint firstItem="RCl-xr-8JG" firstAttribute="centerX" secondItem="nnb-eg-26F" secondAttribute="centerX" id="UVw-vc-YfO"/>
+                            <constraint firstItem="RCl-xr-8JG" firstAttribute="top" secondItem="JG8-95-Ac0" secondAttribute="top" id="Y0X-IK-tAg"/>
+                            <constraint firstItem="RCl-xr-8JG" firstAttribute="leading" secondItem="JG8-95-Ac0" secondAttribute="leading" id="peJ-Z8-r6p"/>
+                            <constraint firstAttribute="trailing" secondItem="RCl-xr-8JG" secondAttribute="trailing" id="q9r-SF-mLP"/>
+                            <constraint firstItem="RCl-xr-8JG" firstAttribute="leading" secondItem="nnb-eg-26F" secondAttribute="leading" id="wdR-g3-6dq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JG8-95-Ac0"/>
                     </view>
                     <navigationItem key="navigationItem" id="IVN-01-Iqx"/>
@@ -211,7 +239,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oNI-8o-56I"/>
+        <segue reference="JiQ-Ja-RAt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="lauchingPage" width="1080" height="1920"/>
