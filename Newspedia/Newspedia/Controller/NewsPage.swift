@@ -10,6 +10,14 @@ import UIKit
 
 class NewsPage: UIViewController {
 
+    //search bar
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    // bottom icon bar
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +34,34 @@ class NewsPage: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+//    buttom bar icon function
+    
+    
+    @IBAction func trending(_ sender: Any) {
+        let passingQuery = "&category=business"
+    }
+    
+    
+    @IBAction func tech(_ sender: Any) {
+         let passingQuery = "&q=tech"
+    }
+    
+    
+    @IBAction func business(_ sender: Any) {
+         let passingQuery =  "&category=business"
+    }
+    
+    
+    
+    @IBAction func travel(_ sender: Any) {
+          let passingQuery = "&q=travel"
+    }
+    
+    
+    @IBAction func lifeStyle(_ sender: Any) {
+         let passingQuery = "&q=life"
+    }
+    
+    
 }
