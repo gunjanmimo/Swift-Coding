@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In-->
         <scene sceneID="crw-T7-IS3">
             <objects>
-                <viewController id="Xfy-vJ-3Yc" sceneMemberID="viewController">
+                <viewController id="Xfy-vJ-3Yc" customClass="SignIn" customModule="Newspedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JEj-Rt-B9o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,6 +88,9 @@
                                 <rect key="frame" x="172" y="292" width="73" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Sign in"/>
+                                <connections>
+                                    <action selector="signInPressed:" destination="Xfy-vJ-3Yc" eventType="touchUpInside" id="4aq-YL-174"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -103,6 +106,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="RnG-2w-kNA"/>
                     <connections>
+                        <outlet property="emailField" destination="Ajp-3e-UXE" id="Kgy-pe-Hrk"/>
+                        <outlet property="passwordField" destination="FdI-nD-vyz" id="nKM-Q6-SFB"/>
                         <segue destination="dvh-6Z-yIF" kind="show" identifier="signIn" id="kzc-kX-nSi"/>
                     </connections>
                 </viewController>
@@ -110,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="1813.0434782608697" y="452.67857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--News Page-->
         <scene sceneID="tkJ-Se-ngr">
             <objects>
-                <viewController id="dvh-6Z-yIF" sceneMemberID="viewController">
+                <viewController id="dvh-6Z-yIF" customClass="NewsPage" customModule="Newspedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gjn-1v-VbN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="2546.376811594203" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="qik-Yb-O2i">
             <objects>
-                <viewController id="j1j-wt-qoe" sceneMemberID="viewController">
+                <viewController id="j1j-wt-qoe" customClass="SignUpViewController" customModule="Newspedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iPx-yW-4w6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,6 +163,9 @@
                                 <rect key="frame" x="166" y="312" width="82" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="j1j-wt-qoe" eventType="touchUpInside" id="DJG-us-jDP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -173,6 +181,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="xZl-b6-g0K"/>
                     <connections>
+                        <outlet property="emailField" destination="bV0-V7-WUA" id="n3b-Dj-54m"/>
+                        <outlet property="nameField" destination="1Ol-sY-JOC" id="ocX-CW-tGy"/>
+                        <outlet property="passwordField" destination="j4f-Kx-oEL" id="2dc-ni-LBv"/>
                         <segue destination="dvh-6Z-yIF" kind="show" identifier="signUp" id="BzO-OF-tHo"/>
                     </connections>
                 </viewController>
