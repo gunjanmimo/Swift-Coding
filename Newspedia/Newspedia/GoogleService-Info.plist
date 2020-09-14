@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>575952614372-uo73jj23alitmjn2oti91m8r81e3u8sa.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.575952614372-uo73jj23alitmjn2oti91m8r81e3u8sa</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAEO_-3p5zaYIXRklhU6ti0wW810seoz9g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>575952614372</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ml.commandline.Newspedia</string>
+	<key>PROJECT_ID</key>
+	<string>newspedia-49db8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>newspedia-49db8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:575952614372:ios:45830cb9eb46da6f5a4df1</string>
+	<key>DATABASE_URL</key>
+	<string>https://newspedia-49db8.firebaseio.com</string>
+</dict>
+</plist>

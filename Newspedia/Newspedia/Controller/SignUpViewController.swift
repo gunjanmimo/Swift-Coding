@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class SignUpViewController: UIViewController {
     
@@ -18,27 +20,31 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
     
     
     
     @IBAction func signUpPressed(_ sender: UIButton) {
+        if let email = emailField.text, let password = passwordField.text{
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error{
+                    print(e.localizedDescription)
+                } else{
+                    self.performSegue(withIdentifier: "signUp", sender: self)
+                }
+                
+            }
+        } else{
+            print("something wrong")
+        }
+        
         
     }
     
     
-
+    
 }
