@@ -15,19 +15,17 @@ protocol NewsDataMangerDelegate {
 
 struct NewsDataManager {
     let newsURL = "http://newsapi.org/v2/top-headlines?apiKey=fe0771a2c1a6435f9cc27bd41bf2109f&country=us&category=business"
-    var delegate = NewsDataMangerDelegate?
+    var delegate: NewsDataMangerDelegate?
     
-    func fetch (_ queryString: String){
-        let urlString = "\(newsURL)+\(queryString)"
-        performRequest(with: urlString)
+    func fetch(_ queryString:String) {
+        let urlString = newsURL+queryString
+        performRequest(urlString)
     }
-    //   performing api request
-    func performRequest(with urlString:String) {
-        //       1. create url
+    
+    func performRequest(_ urlString:String) {
+        //        1. create url
         if let url = URL(string: urlString){
-            //          2.  create url session
             let session = URLSession(configuration: .default)
-            // 3. create task
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil{
                     print(error!.localizedDescription)
@@ -38,7 +36,19 @@ struct NewsDataManager {
                     }
                 }
             }
+            task.resume()
         }
-        task.resume()
+    }
+    
+    func perseJSON(_ data:Data)-> NewsData?{
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode(NewsData.self, from: data)
+            return decodedData
+        }
+        catch{
+            delegate?.didFailedWithError(error)
+            return nil
+        }
     }
 }
