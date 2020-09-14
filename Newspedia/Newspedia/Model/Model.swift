@@ -44,6 +44,7 @@ struct NewsDataManager {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(NewsData.self, from: data)
+            // print(decodedData.articles[0].content)
             return decodedData
         }
         catch{
