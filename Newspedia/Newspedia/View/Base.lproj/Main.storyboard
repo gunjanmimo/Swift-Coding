@@ -122,7 +122,85 @@
                     <view key="view" contentMode="scaleToFill" id="gjn-1v-VbN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j4A-Kn-JiA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="764"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <searchBar key="tableFooterView" contentMode="redraw" id="Du4-ON-MlG">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smz-7Z-4X7">
+                                <rect key="frame" x="0.0" y="834" width="414" height="62"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="f1R-1P-lVf">
+                                        <rect key="frame" x="37" y="8" width="340" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eO2-Bi-Xjv">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="9ls-WK-3dh"/>
+                                                    <constraint firstAttribute="height" constant="44" id="TEO-O4-5x1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" image="flame.fill" catalog="system"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMk-8J-5Zg">
+                                                <rect key="frame" x="74" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Bq9-EJ-dkF"/>
+                                                    <constraint firstAttribute="width" constant="44" id="njf-vV-ed9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" image="desktopcomputer" catalog="system"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrU-dM-TlC">
+                                                <rect key="frame" x="148" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="AOf-hx-k4I"/>
+                                                    <constraint firstAttribute="width" constant="44" id="KDT-Ry-hbR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" image="dollarsign.circle" catalog="system"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PH-vw-gcf">
+                                                <rect key="frame" x="222" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="B7r-OA-Zvx"/>
+                                                    <constraint firstAttribute="height" constant="44" id="qU4-YJ-uTA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" image="airplane" catalog="system"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cX1-h9-KOY">
+                                                <rect key="frame" x="296" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="iud-jl-eFw"/>
+                                                    <constraint firstAttribute="height" constant="44" id="wQN-YE-l7j"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" image="person.3.fill" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="f1R-1P-lVf" firstAttribute="top" secondItem="Smz-7Z-4X7" secondAttribute="topMargin" id="cpO-im-lO6"/>
+                                    <constraint firstItem="f1R-1P-lVf" firstAttribute="centerX" secondItem="Smz-7Z-4X7" secondAttribute="centerX" id="eql-lH-SbS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Smz-7Z-4X7" secondAttribute="bottom" constant="-34" id="6gO-SE-UF4"/>
+                            <constraint firstItem="Smz-7Z-4X7" firstAttribute="top" secondItem="yd5-9N-RUz" secondAttribute="top" constant="746" id="C0c-Bd-SN5"/>
+                            <constraint firstItem="Smz-7Z-4X7" firstAttribute="leading" secondItem="yd5-9N-RUz" secondAttribute="leading" id="Okn-Mf-HPJ"/>
+                            <constraint firstItem="Smz-7Z-4X7" firstAttribute="centerX" secondItem="gjn-1v-VbN" secondAttribute="centerX" id="rAg-XI-lB8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yd5-9N-RUz"/>
                     </view>
                     <navigationItem key="navigationItem" id="kI3-XW-9wK"/>
@@ -213,4 +291,11 @@
     <inferredMetricsTieBreakers>
         <segue reference="kzc-kX-nSi"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="airplane" catalog="system" width="128" height="115"/>
+        <image name="desktopcomputer" catalog="system" width="128" height="101"/>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="flame.fill" catalog="system" width="109" height="128"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+    </resources>
 </document>
