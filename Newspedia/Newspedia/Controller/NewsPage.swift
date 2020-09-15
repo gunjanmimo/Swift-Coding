@@ -40,21 +40,21 @@ class NewsPage: UIViewController {
     //    buttom bar icon function
     
     
-    @IBAction func trending(_ sender: Any) {
+    @IBAction func trending(_ sender: UIButton) {
         let passingQuery = "&country=in"
         //print(passingQuery)
         newsManager.fetch(passingQuery)
     }
     
     
-    @IBAction func tech(_ sender: Any) {
+    @IBAction func tech(_ sender: UIButton) {
         let passingQuery = "&q=tech"
         //print(passingQuery)
         newsManager.fetch(passingQuery)
     }
     
     
-    @IBAction func business(_ sender: Any) {
+    @IBAction func business(_ sender: UIButton) {
         let passingQuery =  "&category=business"
         //print(passingQuery)
         newsManager.fetch(passingQuery)
@@ -62,18 +62,22 @@ class NewsPage: UIViewController {
     
     
     
-    @IBAction func travel(_ sender: Any) {
+    @IBAction func travel(_ sender: UIButton) {
         let passingQuery = "&q=travel"
         //print(passingQuery)
         newsManager.fetch(passingQuery)
     }
     
     
-    @IBAction func lifeStyle(_ sender: Any) {
+    @IBAction func lifeStyle(_ sender: UIButton) {
         let passingQuery = "&q=life"
         //print(passingQuery)
         newsManager.fetch(passingQuery)
     }
     
+    
+    func didUpdateData(_ data: NewsData){
+        print(data.articles[0].author)
+    }
     
 }

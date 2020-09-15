@@ -14,11 +14,12 @@ protocol NewsDataMangerDelegate {
 }
 
 struct NewsDataManager {
-    let newsURL = "http://newsapi.org/v2/top-headlines?apiKey=fe0771a2c1a6435f9cc27bd41bf2109f"
+    let newsURL = "https://newsapi.org/v2/top-headlines?apiKey=fe0771a2c1a6435f9cc27bd41bf2109f"
     var delegate: NewsDataMangerDelegate?
     
     func fetch(_ queryString:String) {
         let urlString = newsURL+queryString
+        print(urlString)
         performRequest(urlString)
     }
     
@@ -32,6 +33,7 @@ struct NewsDataManager {
                 }
                 if let safeData = data{
                     if let newsData = self.perseJSON(safeData){
+                        //print("data persed")
                         self.delegate?.didUpdateData(newsData)
                     }
                 }
@@ -44,7 +46,7 @@ struct NewsDataManager {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(NewsData.self, from: data)
-            print(decodedData.articles[0].content)
+            // print(decodedData.articles[0].author)
             return decodedData
         }
         catch{

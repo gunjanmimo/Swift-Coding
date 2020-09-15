@@ -9,19 +9,19 @@
 import Foundation
 
 struct NewsData: Codable {
-    let articles: [article]
+    let articles: [Article]
 }
-struct article: Codable{
+struct Article: Codable{
     let source: [Source]
-    let author:String
-    let title:String
-    let description:String
-    let url:String
-    let urlToImage:String
-    let content:String
+    let author: String
+    let title: String
+    let description: String
+    let url: String
+    let urlToImage: String
+    let content: String
 }
 
 struct Source:Codable {
-    let id:String
-    let name:String
+    let id: String
+    let name: String
 }
