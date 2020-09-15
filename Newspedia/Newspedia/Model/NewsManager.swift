@@ -8,9 +8,6 @@
 
 import Foundation
 
-
-
-
 struct NewsManager {
     let newsURL = "https://newsapi.org/v2/top-headlines?apiKey=fe0771a2c1a6435f9cc27bd41bf2109f"
     func fetchNews(_ queryString:String){
