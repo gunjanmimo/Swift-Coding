@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98E593E52510F31200004352 /* CarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E593E42510F31200004352 /* CarVC.swift */; };
+		98E593E72510F50200004352 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E593E62510F50200004352 /* CarCell.swift */; };
+		98E593E92510F65A00004352 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E593E82510F65A00004352 /* Car.swift */; };
 		98E7A4B52510C72700ACDDA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7A4B42510C72700ACDDA0 /* AppDelegate.swift */; };
 		98E7A4B72510C72700ACDDA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7A4B62510C72700ACDDA0 /* SceneDelegate.swift */; };
-		98E7A4B92510C72700ACDDA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7A4B82510C72700ACDDA0 /* ViewController.swift */; };
 		98E7A4BC2510C72700ACDDA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E7A4BA2510C72700ACDDA0 /* Main.storyboard */; };
 		98E7A4BE2510C72800ACDDA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E7A4BD2510C72800ACDDA0 /* Assets.xcassets */; };
 		98E7A4C12510C72800ACDDA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E7A4BF2510C72800ACDDA0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98E593E42510F31200004352 /* CarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVC.swift; sourceTree = "<group>"; };
+		98E593E62510F50200004352 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		98E593E82510F65A00004352 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		98E7A4B12510C72700ACDDA0 /* Tabel View swift4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabel View swift4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E7A4B42510C72700ACDDA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98E7A4B62510C72700ACDDA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98E7A4B82510C72700ACDDA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98E7A4BB2510C72700ACDDA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98E7A4BD2510C72800ACDDA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98E7A4C02510C72800ACDDA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				98E7A4B42510C72700ACDDA0 /* AppDelegate.swift */,
 				98E7A4B62510C72700ACDDA0 /* SceneDelegate.swift */,
-				98E7A4B82510C72700ACDDA0 /* ViewController.swift */,
+				98E593E42510F31200004352 /* CarVC.swift */,
+				98E593E62510F50200004352 /* CarCell.swift */,
+				98E593E82510F65A00004352 /* Car.swift */,
 				98E7A4BA2510C72700ACDDA0 /* Main.storyboard */,
 				98E7A4BD2510C72800ACDDA0 /* Assets.xcassets */,
 				98E7A4BF2510C72800ACDDA0 /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98E7A4B92510C72700ACDDA0 /* ViewController.swift in Sources */,
+				98E593E52510F31200004352 /* CarVC.swift in Sources */,
 				98E7A4B52510C72700ACDDA0 /* AppDelegate.swift in Sources */,
+				98E593E92510F65A00004352 /* Car.swift in Sources */,
+				98E593E72510F50200004352 /* CarCell.swift in Sources */,
 				98E7A4B72510C72700ACDDA0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
