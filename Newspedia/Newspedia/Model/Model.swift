@@ -14,7 +14,7 @@ protocol NewsDataMangerDelegate {
 }
 
 struct NewsDataManager {
-    let newsURL = "http://newsapi.org/v2/top-headlines?apiKey=fe0771a2c1a6435f9cc27bd41bf2109f&country=us&category=business"
+    let newsURL = "http://newsapi.org/v2/top-headlines?apiKey=fe0771a2c1a6435f9cc27bd41bf2109f"
     var delegate: NewsDataMangerDelegate?
     
     func fetch(_ queryString:String) {
@@ -44,7 +44,7 @@ struct NewsDataManager {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(NewsData.self, from: data)
-            // print(decodedData.articles[0].content)
+            print(decodedData.articles[0].content)
             return decodedData
         }
         catch{
