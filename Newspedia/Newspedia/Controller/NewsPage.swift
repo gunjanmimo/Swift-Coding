@@ -11,7 +11,7 @@ import UIKit
 class NewsPage: UIViewController {
     
     
-    var newsManager = NewsDataManager()
+    var newsManager = NewsManager()
     //search bar
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -42,42 +42,34 @@ class NewsPage: UIViewController {
     
     @IBAction func trending(_ sender: UIButton) {
         let passingQuery = "&country=in"
-        //print(passingQuery)
-        newsManager.fetch(passingQuery)
+        newsManager.fetchNews(passingQuery)
     }
     
     
     @IBAction func tech(_ sender: UIButton) {
         let passingQuery = "&q=tech"
-        //print(passingQuery)
-        newsManager.fetch(passingQuery)
-    }
+        newsManager.fetchNews(passingQuery)    }
     
     
     @IBAction func business(_ sender: UIButton) {
         let passingQuery =  "&category=business"
-        //print(passingQuery)
-        newsManager.fetch(passingQuery)
+            newsManager.fetchNews(passingQuery)
     }
     
     
     
     @IBAction func travel(_ sender: UIButton) {
         let passingQuery = "&q=travel"
-        //print(passingQuery)
-        newsManager.fetch(passingQuery)
+      newsManager.fetchNews(passingQuery)
     }
     
     
     @IBAction func lifeStyle(_ sender: UIButton) {
         let passingQuery = "&q=life"
-        //print(passingQuery)
-        newsManager.fetch(passingQuery)
+      newsManager.fetchNews(passingQuery)
     }
     
     
-    func didUpdateData(_ data: NewsData){
-        print(data.articles[0].author)
-    }
+
     
 }
