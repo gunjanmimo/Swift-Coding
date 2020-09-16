@@ -30,6 +30,7 @@ class NewsPage: UIViewController {
         tableView.delegate  = self
         tableView.dataSource = self
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+       
     }
     
     
@@ -88,5 +89,7 @@ extension NewsPage:UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
 }
