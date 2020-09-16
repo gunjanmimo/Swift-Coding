@@ -11,12 +11,14 @@ import UIKit
 class NewsPage: UIViewController {
     
     
+    
+    
     var newsManager = NewsManager()
     //search bar
+    var news:[News] = []
     
-    @IBOutlet weak var searchBar: UISearchBar!
-    // bottom icon bar
     
+    @IBOutlet weak var tableView: UITableView!
     
     
     
@@ -24,20 +26,22 @@ class NewsPage: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        news = creteNewsArray()
+        tableView.delegate  = self
+        tableView.dataSource = self
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
     
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
-    //    buttom bar icon function
+    func creteNewsArray() -> [News]{
+        var newsArr: [News] = []
+        newsArr.append(News(imgURL: URL(string: "https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg")!,heading: "Glen Oaks Escrow Announces It Assisted With Yet Another Bitcoin Transaction",content: "ENCINITAS, Calif., Sept. 16, 2020 /PRNewswire/ -- Glen Oaks Escrow, one of Southern California's largest independent escrow companies, recently announced that it closed its second Bitcoin transaction. The organization shared that the homebuyer contacted the G…"))
+        
+                newsArr.append(News(imgURL: URL(string: "https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg")!,heading: "Glen Oaks Escrow Announces It Assisted With Yet Another Bitcoin Transaction",content: "ENCINITAS, Calif., Sept. 16, 2020 /PRNewswire/ -- Glen Oaks Escrow, one of Southern California's largest independent escrow companies, recently announced that it closed its second Bitcoin transaction. The organization shared that the homebuyer contacted the G…"))
+                newsArr.append(News(imgURL: URL(string: "https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg")!,heading: "Glen Oaks Escrow Announces It Assisted With Yet Another Bitcoin Transaction",content: "ENCINITAS, Calif., Sept. 16, 2020 /PRNewswire/ -- Glen Oaks Escrow, one of Southern California's largest independent escrow companies, recently announced that it closed its second Bitcoin transaction. The organization shared that the homebuyer contacted the G…"))
+        
+        return newsArr
+    }
     
     
     @IBAction func trending(_ sender: UIButton) {
@@ -53,23 +57,36 @@ class NewsPage: UIViewController {
     
     @IBAction func business(_ sender: UIButton) {
         let passingQuery =  "&category=business"
-            newsManager.fetchNews(passingQuery)
+        newsManager.fetchNews(passingQuery)
     }
     
     
     
     @IBAction func travel(_ sender: UIButton) {
         let passingQuery = "&q=travel"
-      newsManager.fetchNews(passingQuery)
+        newsManager.fetchNews(passingQuery)
     }
     
     
     @IBAction func lifeStyle(_ sender: UIButton) {
         let passingQuery = "&q=life"
-      newsManager.fetchNews(passingQuery)
+        newsManager.fetchNews(passingQuery)
+    }
+}
+
+
+extension NewsPage:UITableViewDelegate, UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        news.count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let n = news[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell") as! NewsCell
+        cell.setNews(n)
+        return cell
+    }
     
-
     
 }
