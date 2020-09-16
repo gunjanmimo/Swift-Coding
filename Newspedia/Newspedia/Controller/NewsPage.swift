@@ -12,7 +12,7 @@ class NewsPage: UIViewController {
     
     var newsManager = NewsManager()
     var news:[News] = []
-    var nData:NewsData!
+    var nData:NewsData?
     //search bar
     
     @IBOutlet weak var tableView: UITableView!
@@ -29,9 +29,15 @@ class NewsPage: UIViewController {
     func creteNewsArray() -> [News]{
         var newsArr: [News] = []
         
-        //        newsArr.append(News(imgURL: URL(string: "https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg")!,heading: "Glen Oaks Escrow Announces It Assisted With Yet Another Bitcoin Transaction",content: "ENCINITAS, Calif., Sept. 16, 2020 /PRNewswire/ -- Glen Oaks Escrow, one of Southern California's largest independent escrow companies, recently announced that it closed its second Bitcoin transaction. The organization shared that the homebuyer contacted the G…"))
-        for  i in 0...nData.articles.count{
-            newsArr.append(News(imgURL: URL(string: nData.articles[i].urlToImage!)!, heading: nData.articles[i].title, content: nData.articles[i].articleDescription!))
+    if   let nl = nData{
+        for  i in 0...5{
+            
+                newsArr.append(News(imgURL: URL(string: nl.articles[i].urlToImage!)!, heading: nl.articles[i].title, content: nl.articles[i].articleDescription!))
+            }
+            
+        }
+    else{
+        newsArr.append(News(imgURL: URL(string: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHJTnwaS-YjGL59BMjPuyS0oLdgcqvvVV_xQ&usqp=CAU")!, heading: "No news Availabe", content: "No releated news. something wrong with NewsPedia"))
         }
         
         return newsArr

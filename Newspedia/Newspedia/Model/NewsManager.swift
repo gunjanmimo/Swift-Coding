@@ -12,7 +12,7 @@ struct NewsManager {
     let newsURL = "https://newsapi.org/v2/top-headlines?apiKey=fe0771a2c1a6435f9cc27bd41bf2109f"
     func fetchNews(_ queryString:String) ->NewsData{
         // let urlString = newsURL+queryString
-        let urlString =        "http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fe0771a2c1a6435f9cc27bd41bf2109f"
+        let urlString =        "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fe0771a2c1a6435f9cc27bd41bf2109f"
         return performRequest(urlString)
     }
     
