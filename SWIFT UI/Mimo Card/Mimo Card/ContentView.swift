@@ -13,8 +13,31 @@ struct ContentView: View {
         ZStack{
             
       Color(red: 0.18, green: 0.84, blue: 0.45).edgesIgnoringSafeArea(.all)
-            Text("Gunjan Paul").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .foregroundColor(.white)
+            
+            
+            VStack {
+                Image("apex").resizable().frame(width: 150, height: 150, alignment: .center).clipShape(Circle()).overlay(Circle().stroke(Color.white, lineWidth: 5))
+                
+                Text("Gunjan Paul").font(Font.custom("LongCang-Regular", size: 40)).bold()
+                    .foregroundColor(.white)
+                Text("iOS Developer").bold().foregroundColor(.white).font(.system(size: 25))
+                Divider()
+                
+             
+                 RoundedRectangle(cornerRadius: 25).frame(height: 40, alignment: .center).foregroundColor(.white).overlay(
+                  HStack {
+                      Image(systemName: "icloud")
+                      Text("gunjan.mtbpaul@gmail.com")
+                  }
+                              )
+                
+   RoundedRectangle(cornerRadius: 25).frame(height: 40, alignment: .center).foregroundColor(.white).overlay(
+    HStack {
+        Image(systemName: "phone")
+        Text("123456789")
+    }
+                )
+            }
         }
     }
 }

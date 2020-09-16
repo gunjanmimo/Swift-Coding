@@ -24,6 +24,7 @@
 		98409A1B2512AB56005B5ECB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98409A1E2512AB56005B5ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98409A202512AB56005B5ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98409A272512AD3F005B5ECB /* LongCang-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LongCang-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		98409A112512AB56005B5ECB /* Mimo Card */ = {
 			isa = PBXGroup;
 			children = (
+				98409A262512AD2C005B5ECB /* Fonts */,
 				98409A122512AB56005B5ECB /* AppDelegate.swift */,
 				98409A142512AB56005B5ECB /* SceneDelegate.swift */,
 				98409A162512AB56005B5ECB /* ContentView.swift */,
@@ -73,6 +75,14 @@
 				98409A1B2512AB56005B5ECB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		98409A262512AD2C005B5ECB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				98409A272512AD3F005B5ECB /* LongCang-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
