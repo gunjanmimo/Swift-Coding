@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             
-      Color(red: 0.18, green: 0.84, blue: 0.45).edgesIgnoringSafeArea(.all)
+            Color(red: 0.18, green: 0.84, blue: 0.45).edgesIgnoringSafeArea(.all)
             
             
             VStack {
@@ -23,20 +23,24 @@ struct ContentView: View {
                 Text("iOS Developer").bold().foregroundColor(.white).font(.system(size: 25))
                 Divider()
                 
-             
-                 RoundedRectangle(cornerRadius: 25).frame(height: 40, alignment: .center).foregroundColor(.white).overlay(
-                  HStack {
-                      Image(systemName: "icloud")
-                      Text("gunjan.mtbpaul@gmail.com")
-                  }
-                              )
                 
-   RoundedRectangle(cornerRadius: 25).frame(height: 40, alignment: .center).foregroundColor(.white).overlay(
-    HStack {
-        Image(systemName: "phone")
-        Text("123456789")
-    }
+                RoundedRectangle(cornerRadius: 25).frame(height: 40, alignment: .center).foregroundColor(.white).overlay(
+                    HStack {
+                        Image(systemName: "icloud.fill").foregroundColor(.green)
+                        Text("gunjan.mtbpaul@gmail.com")
+                    }
                 )
+                
+                RoundedRectangle(cornerRadius: 25).frame(height: 40, alignment: .center).foregroundColor(.white).overlay(
+                    HStack {
+                        Image(systemName: "phone.fill").foregroundColor(.green)
+                        Text("123456789")
+                    }
+                    .padding(.all)
+                )
+                
+                
+                
             }
         }
     }

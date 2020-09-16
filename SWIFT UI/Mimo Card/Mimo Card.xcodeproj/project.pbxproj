@@ -13,6 +13,7 @@
 		98409A192512AB56005B5ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98409A182512AB56005B5ECB /* Assets.xcassets */; };
 		98409A1C2512AB56005B5ECB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98409A1B2512AB56005B5ECB /* Preview Assets.xcassets */; };
 		98409A1F2512AB56005B5ECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98409A1D2512AB56005B5ECB /* LaunchScreen.storyboard */; };
+		98409A292512B9F1005B5ECB /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98409A282512B9F1005B5ECB /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		98409A1E2512AB56005B5ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98409A202512AB56005B5ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98409A272512AD3F005B5ECB /* LongCang-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LongCang-Regular.ttf"; sourceTree = "<group>"; };
+		98409A282512B9F1005B5ECB /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				98409A122512AB56005B5ECB /* AppDelegate.swift */,
 				98409A142512AB56005B5ECB /* SceneDelegate.swift */,
 				98409A162512AB56005B5ECB /* ContentView.swift */,
+				98409A282512B9F1005B5ECB /* InfoView.swift */,
 				98409A182512AB56005B5ECB /* Assets.xcassets */,
 				98409A1D2512AB56005B5ECB /* LaunchScreen.storyboard */,
 				98409A202512AB56005B5ECB /* Info.plist */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98409A292512B9F1005B5ECB /* InfoView.swift in Sources */,
 				98409A132512AB56005B5ECB /* AppDelegate.swift in Sources */,
 				98409A152512AB56005B5ECB /* SceneDelegate.swift in Sources */,
 				98409A172512AB56005B5ECB /* ContentView.swift in Sources */,
