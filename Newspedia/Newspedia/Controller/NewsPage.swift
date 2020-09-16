@@ -10,18 +10,12 @@ import UIKit
 
 class NewsPage: UIViewController {
     
-    
-    
-    
     var newsManager = NewsManager()
-    //search bar
     var news:[News] = []
-    
+    var nData:NewsData!
+    //search bar
     
     @IBOutlet weak var tableView: UITableView!
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,17 +24,15 @@ class NewsPage: UIViewController {
         tableView.delegate  = self
         tableView.dataSource = self
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-       
+        
     }
-    
-    
     func creteNewsArray() -> [News]{
         var newsArr: [News] = []
         
-        newsArr.append(News(imgURL: URL(string: "https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg")!,heading: "Glen Oaks Escrow Announces It Assisted With Yet Another Bitcoin Transaction",content: "ENCINITAS, Calif., Sept. 16, 2020 /PRNewswire/ -- Glen Oaks Escrow, one of Southern California's largest independent escrow companies, recently announced that it closed its second Bitcoin transaction. The organization shared that the homebuyer contacted the G…"))
-        
-                newsArr.append(News(imgURL: URL(string: "https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg")!,heading: "Glen Oaks Escrow Announces It Assisted With Yet Another Bitcoin Transaction",content: "ENCINITAS, Calif., Sept. 16, 2020 /PRNewswire/ -- Glen Oaks Escrow, one of Southern California's largest independent escrow companies, recently announced that it closed its second Bitcoin transaction. The organization shared that the homebuyer contacted the G…"))
-                newsArr.append(News(imgURL: URL(string: "https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg")!,heading: "Glen Oaks Escrow Announces It Assisted With Yet Another Bitcoin Transaction",content: "ENCINITAS, Calif., Sept. 16, 2020 /PRNewswire/ -- Glen Oaks Escrow, one of Southern California's largest independent escrow companies, recently announced that it closed its second Bitcoin transaction. The organization shared that the homebuyer contacted the G…"))
+        //        newsArr.append(News(imgURL: URL(string: "https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg")!,heading: "Glen Oaks Escrow Announces It Assisted With Yet Another Bitcoin Transaction",content: "ENCINITAS, Calif., Sept. 16, 2020 /PRNewswire/ -- Glen Oaks Escrow, one of Southern California's largest independent escrow companies, recently announced that it closed its second Bitcoin transaction. The organization shared that the homebuyer contacted the G…"))
+        for  i in 0...nData.articles.count{
+            newsArr.append(News(imgURL: URL(string: nData.articles[i].urlToImage!)!, heading: nData.articles[i].title, content: nData.articles[i].articleDescription!))
+        }
         
         return newsArr
     }
@@ -48,31 +40,31 @@ class NewsPage: UIViewController {
     
     @IBAction func trending(_ sender: UIButton) {
         let passingQuery = "&country=in"
-        newsManager.fetchNews(passingQuery)
+        nData = newsManager.fetchNews(passingQuery)
     }
     
     
     @IBAction func tech(_ sender: UIButton) {
         let passingQuery = "&q=tech"
-        newsManager.fetchNews(passingQuery)    }
+        nData =  newsManager.fetchNews(passingQuery)    }
     
     
     @IBAction func business(_ sender: UIButton) {
         let passingQuery =  "&category=business"
-        newsManager.fetchNews(passingQuery)
+        nData = newsManager.fetchNews(passingQuery)
     }
     
     
     
     @IBAction func travel(_ sender: UIButton) {
         let passingQuery = "&q=travel"
-        newsManager.fetchNews(passingQuery)
+        nData = newsManager.fetchNews(passingQuery)
     }
     
     
     @IBAction func lifeStyle(_ sender: UIButton) {
         let passingQuery = "&q=life"
-        newsManager.fetchNews(passingQuery)
+        nData = newsManager.fetchNews(passingQuery)
     }
 }
 
