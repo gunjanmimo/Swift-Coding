@@ -21,7 +21,8 @@ struct NewsManager {
     //    3. creating a task
     //    4. start the task
     
-    func performRequest(_ urlString:String){
+    func performRequest(_ urlString:String) -> [NewsData]{
+        var n:[NewsData] = []
         if let url = URL(string: urlString){
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
@@ -29,25 +30,30 @@ struct NewsManager {
                     print(error!)
                     return
                 }
-                if let safeData  = data { self.perseJSON(safeData)
+                if let safeData  = data {
+                n = self.perseJSON(safeData)
                 }
             }
             task.resume()
         }
+        return n
     }
-    func perseJSON(_ newsData:Data){
+    
+    
+    
+    func perseJSON(_ newsData:Data) -> [ NewsData] {
+        var n:[NewsData] = []
         let decoder = JSONDecoder()
         do {
            let decodedData = try decoder.decode(NewsData.self, from: newsData)
-            print(decodedData.articles[0].articleDescription!)
-            //print(decodedData.articles[0].author!)
-            
-            
-
+           // print(decodedData.articles[0].articleDescription!)
+            n =  [decodedData]
         }catch{
             print(error)
         }
+         return n
     }
+   
 }
 
 

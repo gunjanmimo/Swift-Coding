@@ -36,6 +36,7 @@ class NewsPage: UIViewController {
     
     func creteNewsArray() -> [News]{
         var newsArr: [News] = []
+        
         newsArr.append(News(imgURL: URL(string: "https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg")!,heading: "Glen Oaks Escrow Announces It Assisted With Yet Another Bitcoin Transaction",content: "ENCINITAS, Calif., Sept. 16, 2020 /PRNewswire/ -- Glen Oaks Escrow, one of Southern California's largest independent escrow companies, recently announced that it closed its second Bitcoin transaction. The organization shared that the homebuyer contacted the G…"))
         
                 newsArr.append(News(imgURL: URL(string: "https://www.prnewswire.com/content/dam/prnewswire/common/prn_facebook_sharing_logo.jpg")!,heading: "Glen Oaks Escrow Announces It Assisted With Yet Another Bitcoin Transaction",content: "ENCINITAS, Calif., Sept. 16, 2020 /PRNewswire/ -- Glen Oaks Escrow, one of Southern California's largest independent escrow companies, recently announced that it closed its second Bitcoin transaction. The organization shared that the homebuyer contacted the G…"))
