@@ -1,29 +1,16 @@
-//
-//  Model.swift
-//  Newspedia
-//
-//  Created by Gunjan  Paul on 14/09/20.
-//  Copyright © 2020 Gunjan  Paul. All rights reserved.
-//
-
 import Foundation
 
-struct NewsManager {
+struct  NewsManager {
     let newsURL = "https://newsapi.org/v2/top-headlines?apiKey=fe0771a2c1a6435f9cc27bd41bf2109f"
-    func fetchNews(_ queryString:String) ->NewsData{
-        // let urlString = newsURL+queryString
-        let urlString =        "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fe0771a2c1a6435f9cc27bd41bf2109f"
+    func fetchNews(_ queryString:String)->NewsData{
+        let urlString = newsURL+queryString
         return performRequest(urlString)
+        
     }
-    
-    //networking steps
-    //    1. create URL
-    //    2. create URLSession
-    //    3. creating a task
-    //    4. start the task
-    
-    func performRequest(_ urlString:String) -> NewsData{
+    // perform news api request
+    func performRequest(_ urlString:String) -> NewsData {
         var n:NewsData!
+        
         if let url = URL(string: urlString){
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
@@ -31,8 +18,8 @@ struct NewsManager {
                     print(error!)
                     return
                 }
-                if let safeData  = data {
-                    n = self.perseJSON(safeData)
+                if let safeData = data{
+                    n  = self.perseJSON(safeData)
                 }
             }
             task.resume()
@@ -40,21 +27,16 @@ struct NewsManager {
         return n
     }
     
-    
-    //    persing function
-    func perseJSON(_ newsData:Data) ->  NewsData{
-        var n:NewsData!
-        let decoder = JSONDecoder()
+    func perseJSON(_ newsData:Data) -> NewsData{
+        var x:NewsData!
+        let dercoder = JSONDecoder()
         do {
-            let decodedData = try decoder.decode(NewsData.self, from: newsData)
-            // print(decodedData.articles[0].articleDescription!)
-            n = decodedData
+            let decodedData = try dercoder.decode(NewsData.self, from: newsData)
+            x = decodedData
         }catch{
             print(error)
         }
-        return n
+        return x
     }
     
 }
-
-

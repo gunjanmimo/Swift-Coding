@@ -11,36 +11,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            
-            Color(red: 0.18, green: 0.84, blue: 0.45).edgesIgnoringSafeArea(.all)
-            
-            
-            VStack {
-                Image("apex").resizable().frame(width: 150, height: 150, alignment: .center).clipShape(Circle()).overlay(Circle().stroke(Color.white, lineWidth: 5))
-                
-                Text("Gunjan Paul").font(Font.custom("LongCang-Regular", size: 40)).bold()
-                    .foregroundColor(.white)
-                Text("iOS Developer").bold().foregroundColor(.white).font(.system(size: 25))
+            Color(red: 0.20, green: 0.85, blue: 0.70).edgesIgnoringSafeArea(.all)
+            VStack{
+                Image("cyberpunk").resizable().frame(width: 150, height: 150, alignment: .center).clipShape(Circle()).overlay(Circle().stroke(Color.white,lineWidth: 5))
+                Text("Gunjan Paul").font(Font.custom("PermanentMarker-Regular", size: 40)).foregroundColor(.white)
+                Text("iOS Developer").foregroundColor(.white)
                 Divider()
-                
-                
-                RoundedRectangle(cornerRadius: 25).frame(height: 40, alignment: .center).foregroundColor(.white).overlay(
-                    HStack {
-                        Image(systemName: "icloud.fill").foregroundColor(.green)
-                        Text("gunjan.mtbpaul@gmail.com")
-                    }
-                )
-                
-                RoundedRectangle(cornerRadius: 25).frame(height: 40, alignment: .center).foregroundColor(.white).overlay(
-                    HStack {
-                        Image(systemName: "phone.fill").foregroundColor(.green)
-                        Text("123456789")
-                    }
-                    .padding(.all)
-                )
-                
-                
-                
+                InfoView(text: "gunjan.mtbpaul@gmail.com", icon: "envelope")
+                InfoView(text: "123456789", icon: "phone")
+              InfoView(text: "Jaipur, Rajasthan", icon: "map")
             }
         }
     }
@@ -48,6 +27,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().previewDevice(PreviewDevice(rawValue: "iPhone Xʀ"))
+        ContentView()
     }
 }
+

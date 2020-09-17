@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		98409A132512AB56005B5ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98409A122512AB56005B5ECB /* AppDelegate.swift */; };
-		98409A152512AB56005B5ECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98409A142512AB56005B5ECB /* SceneDelegate.swift */; };
-		98409A172512AB56005B5ECB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98409A162512AB56005B5ECB /* ContentView.swift */; };
-		98409A192512AB56005B5ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98409A182512AB56005B5ECB /* Assets.xcassets */; };
-		98409A1C2512AB56005B5ECB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98409A1B2512AB56005B5ECB /* Preview Assets.xcassets */; };
-		98409A1F2512AB56005B5ECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98409A1D2512AB56005B5ECB /* LaunchScreen.storyboard */; };
-		98409A292512B9F1005B5ECB /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98409A282512B9F1005B5ECB /* InfoView.swift */; };
+		98232803251355FD0014F2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98232802251355FD0014F2E7 /* AppDelegate.swift */; };
+		98232805251355FD0014F2E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98232804251355FD0014F2E7 /* SceneDelegate.swift */; };
+		98232807251355FD0014F2E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98232806251355FD0014F2E7 /* ContentView.swift */; };
+		98232809251355FE0014F2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98232808251355FE0014F2E7 /* Assets.xcassets */; };
+		9823280C251355FE0014F2E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9823280B251355FE0014F2E7 /* Preview Assets.xcassets */; };
+		9823280F251355FE0014F2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9823280D251355FE0014F2E7 /* LaunchScreen.storyboard */; };
+		98232819251362BB0014F2E7 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98232818251362BB0014F2E7 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		98409A0F2512AB56005B5ECB /* Mimo Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mimo Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		98409A122512AB56005B5ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98409A142512AB56005B5ECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98409A162512AB56005B5ECB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		98409A182512AB56005B5ECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		98409A1B2512AB56005B5ECB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		98409A1E2512AB56005B5ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		98409A202512AB56005B5ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98409A272512AD3F005B5ECB /* LongCang-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LongCang-Regular.ttf"; sourceTree = "<group>"; };
-		98409A282512B9F1005B5ECB /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		982327FF251355FD0014F2E7 /* Mimo Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mimo Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98232802251355FD0014F2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98232804251355FD0014F2E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		98232806251355FD0014F2E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		98232808251355FE0014F2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9823280B251355FE0014F2E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9823280E251355FE0014F2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98232810251355FE0014F2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9823281725135B550014F2E7 /* PermanentMarker-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PermanentMarker-Regular.ttf"; sourceTree = "<group>"; };
+		98232818251362BB0014F2E7 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		98409A0C2512AB56005B5ECB /* Frameworks */ = {
+		982327FC251355FD0014F2E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,64 +40,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		98409A062512AB56005B5ECB = {
+		982327F6251355FD0014F2E7 = {
 			isa = PBXGroup;
 			children = (
-				98409A112512AB56005B5ECB /* Mimo Card */,
-				98409A102512AB56005B5ECB /* Products */,
+				98232801251355FD0014F2E7 /* Mimo Card */,
+				98232800251355FD0014F2E7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		98409A102512AB56005B5ECB /* Products */ = {
+		98232800251355FD0014F2E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98409A0F2512AB56005B5ECB /* Mimo Card.app */,
+				982327FF251355FD0014F2E7 /* Mimo Card.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		98409A112512AB56005B5ECB /* Mimo Card */ = {
+		98232801251355FD0014F2E7 /* Mimo Card */ = {
 			isa = PBXGroup;
 			children = (
-				98409A262512AD2C005B5ECB /* Fonts */,
-				98409A122512AB56005B5ECB /* AppDelegate.swift */,
-				98409A142512AB56005B5ECB /* SceneDelegate.swift */,
-				98409A162512AB56005B5ECB /* ContentView.swift */,
-				98409A282512B9F1005B5ECB /* InfoView.swift */,
-				98409A182512AB56005B5ECB /* Assets.xcassets */,
-				98409A1D2512AB56005B5ECB /* LaunchScreen.storyboard */,
-				98409A202512AB56005B5ECB /* Info.plist */,
-				98409A1A2512AB56005B5ECB /* Preview Content */,
+				9823281625135B450014F2E7 /* fonts */,
+				98232802251355FD0014F2E7 /* AppDelegate.swift */,
+				98232804251355FD0014F2E7 /* SceneDelegate.swift */,
+				98232806251355FD0014F2E7 /* ContentView.swift */,
+				98232818251362BB0014F2E7 /* InfoView.swift */,
+				98232808251355FE0014F2E7 /* Assets.xcassets */,
+				9823280D251355FE0014F2E7 /* LaunchScreen.storyboard */,
+				98232810251355FE0014F2E7 /* Info.plist */,
+				9823280A251355FE0014F2E7 /* Preview Content */,
 			);
 			path = "Mimo Card";
 			sourceTree = "<group>";
 		};
-		98409A1A2512AB56005B5ECB /* Preview Content */ = {
+		9823280A251355FE0014F2E7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				98409A1B2512AB56005B5ECB /* Preview Assets.xcassets */,
+				9823280B251355FE0014F2E7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		98409A262512AD2C005B5ECB /* Fonts */ = {
+		9823281625135B450014F2E7 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				98409A272512AD3F005B5ECB /* LongCang-Regular.ttf */,
+				9823281725135B550014F2E7 /* PermanentMarker-Regular.ttf */,
 			);
-			path = Fonts;
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		98409A0E2512AB56005B5ECB /* Mimo Card */ = {
+		982327FE251355FD0014F2E7 /* Mimo Card */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98409A232512AB56005B5ECB /* Build configuration list for PBXNativeTarget "Mimo Card" */;
+			buildConfigurationList = 98232813251355FE0014F2E7 /* Build configuration list for PBXNativeTarget "Mimo Card" */;
 			buildPhases = (
-				98409A0B2512AB56005B5ECB /* Sources */,
-				98409A0C2512AB56005B5ECB /* Frameworks */,
-				98409A0D2512AB56005B5ECB /* Resources */,
+				982327FB251355FD0014F2E7 /* Sources */,
+				982327FC251355FD0014F2E7 /* Frameworks */,
+				982327FD251355FD0014F2E7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -105,25 +105,25 @@
 			);
 			name = "Mimo Card";
 			productName = "Mimo Card";
-			productReference = 98409A0F2512AB56005B5ECB /* Mimo Card.app */;
+			productReference = 982327FF251355FD0014F2E7 /* Mimo Card.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		98409A072512AB56005B5ECB /* Project object */ = {
+		982327F7251355FD0014F2E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = "Gunjan  Paul";
 				TargetAttributes = {
-					98409A0E2512AB56005B5ECB = {
+					982327FE251355FD0014F2E7 = {
 						CreatedOnToolsVersion = 11.7;
 					};
 				};
 			};
-			buildConfigurationList = 98409A0A2512AB56005B5ECB /* Build configuration list for PBXProject "Mimo Card" */;
+			buildConfigurationList = 982327FA251355FD0014F2E7 /* Build configuration list for PBXProject "Mimo Card" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,48 +131,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 98409A062512AB56005B5ECB;
-			productRefGroup = 98409A102512AB56005B5ECB /* Products */;
+			mainGroup = 982327F6251355FD0014F2E7;
+			productRefGroup = 98232800251355FD0014F2E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98409A0E2512AB56005B5ECB /* Mimo Card */,
+				982327FE251355FD0014F2E7 /* Mimo Card */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		98409A0D2512AB56005B5ECB /* Resources */ = {
+		982327FD251355FD0014F2E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98409A1F2512AB56005B5ECB /* LaunchScreen.storyboard in Resources */,
-				98409A1C2512AB56005B5ECB /* Preview Assets.xcassets in Resources */,
-				98409A192512AB56005B5ECB /* Assets.xcassets in Resources */,
+				9823280F251355FE0014F2E7 /* LaunchScreen.storyboard in Resources */,
+				9823280C251355FE0014F2E7 /* Preview Assets.xcassets in Resources */,
+				98232809251355FE0014F2E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		98409A0B2512AB56005B5ECB /* Sources */ = {
+		982327FB251355FD0014F2E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98409A292512B9F1005B5ECB /* InfoView.swift in Sources */,
-				98409A132512AB56005B5ECB /* AppDelegate.swift in Sources */,
-				98409A152512AB56005B5ECB /* SceneDelegate.swift in Sources */,
-				98409A172512AB56005B5ECB /* ContentView.swift in Sources */,
+				98232819251362BB0014F2E7 /* InfoView.swift in Sources */,
+				98232803251355FD0014F2E7 /* AppDelegate.swift in Sources */,
+				98232805251355FD0014F2E7 /* SceneDelegate.swift in Sources */,
+				98232807251355FD0014F2E7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		98409A1D2512AB56005B5ECB /* LaunchScreen.storyboard */ = {
+		9823280D251355FE0014F2E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				98409A1E2512AB56005B5ECB /* Base */,
+				9823280E251355FE0014F2E7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		98409A212512AB56005B5ECB /* Debug */ = {
+		98232811251355FE0014F2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +240,7 @@
 			};
 			name = Debug;
 		};
-		98409A222512AB56005B5ECB /* Release */ = {
+		98232812251355FE0014F2E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -294,7 +294,7 @@
 			};
 			name = Release;
 		};
-		98409A242512AB56005B5ECB /* Debug */ = {
+		98232814251355FE0014F2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -313,7 +313,7 @@
 			};
 			name = Debug;
 		};
-		98409A252512AB56005B5ECB /* Release */ = {
+		98232815251355FE0014F2E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -335,25 +335,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98409A0A2512AB56005B5ECB /* Build configuration list for PBXProject "Mimo Card" */ = {
+		982327FA251355FD0014F2E7 /* Build configuration list for PBXProject "Mimo Card" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98409A212512AB56005B5ECB /* Debug */,
-				98409A222512AB56005B5ECB /* Release */,
+				98232811251355FE0014F2E7 /* Debug */,
+				98232812251355FE0014F2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98409A232512AB56005B5ECB /* Build configuration list for PBXNativeTarget "Mimo Card" */ = {
+		98232813251355FE0014F2E7 /* Build configuration list for PBXNativeTarget "Mimo Card" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98409A242512AB56005B5ECB /* Debug */,
-				98409A252512AB56005B5ECB /* Release */,
+				98232814251355FE0014F2E7 /* Debug */,
+				98232815251355FE0014F2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 98409A072512AB56005B5ECB /* Project object */;
+	rootObject = 982327F7251355FD0014F2E7 /* Project object */;
 }

@@ -9,13 +9,28 @@
 import SwiftUI
 
 struct InfoView: View {
+    let text:String
+    let icon:String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 25).frame( height: 40, alignment: .center).foregroundColor(.white)
+            .overlay(
+                
+                HStack{
+                    Image(systemName: icon).foregroundColor(.green)
+                    Text(text).bold()
+            })
     }
 }
 
+
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView()
+        ZStack{
+            VStack{
+                InfoView(text: "gunjan.mtbpaul@gmail.com", icon: "envelope")
+                InfoView(text: "123456789", icon: "phone")
+            }
+            
+        }
     }
 }
