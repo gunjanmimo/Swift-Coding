@@ -10,18 +10,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List{
-            Text("Hello, World!")
-            Text("Hello, World!")
-            Text("Hello, World!")
-            Text("Hello, World!")
-        }
-        
+        NavigationView{
+            List(posts){ post in
+                HStack{
+                    Text(post.id)
+                    Text(post.title)
+                }
+                
+            }
+    .navigationBarTitle("Hacker News")
     }
 }
-
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
+
+struct Post:Identifiable {
+    let id:String
+    let title:String
+    
+    
+}
+let posts = [
+    Post(id: "1", title: "Hello"),
+    Post(id: "2", title:"Bonjour"),
+    Post(id: "3", title: "Hola")
+    
+]
