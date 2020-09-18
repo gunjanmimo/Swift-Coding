@@ -12,10 +12,7 @@ import Firebase
 
 class SignIn: UIViewController {
 //    text field
-    
-
     @IBOutlet weak var emailField: UITextField!
-    
     @IBOutlet weak var passwordField: UITextField!
     
     
@@ -24,10 +21,6 @@ class SignIn: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
-
-    
     @IBAction func signInPressed(_ sender: UIButton) {
         if let email = emailField.text, let password = passwordField.text{
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
@@ -39,11 +32,5 @@ class SignIn: UIViewController {
                 }
             }
         }
-        
-        
-        
     }
-    
-    
-
 }

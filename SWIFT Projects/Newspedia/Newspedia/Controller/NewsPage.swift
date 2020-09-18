@@ -20,6 +20,7 @@ class NewsPage: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+         nData = newsManager.fetchNews("&q=tech")
         news = creteNewsArray()
         tableView.delegate  = self
         tableView.dataSource = self
