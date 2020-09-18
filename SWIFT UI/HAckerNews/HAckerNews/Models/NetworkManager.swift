@@ -22,7 +22,9 @@ class NetworkManager:ObservableObject {
                     if let safeData = data{
                         do {
                             let result = try decoder.decode(Result.self, from: safeData)
-                            
+                            DispatchQueue.main.async {
+                                self.posts = result.hits
+                            }
                             self.posts = result.hits
                         }
                         catch{

@@ -10,22 +10,23 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var netWorkManager = NetworkManager()
-
+    
     var body: some View {
         NavigationView{
             List(netWorkManager.posts){ post in
-                HStack{
-                    Text(post.id)
-                    Text(post.title)
-                }
-                
+                NavigationLink(destination: DetailView(url: post.url)) {
+                    HStack{
+                        Text(String(post.points))
+                        Text(post.title)
+                    }
+                }   
             }
-    .navigationBarTitle("Hacker News")
-    }
+            .navigationBarTitle("Hacker News")
+        }
         .onAppear {
             self.netWorkManager.fetchData()
         }
-}
+    }
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
