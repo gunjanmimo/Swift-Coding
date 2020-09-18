@@ -1,6 +1,0 @@
-framework module Pods_Newspedia {
-  umbrella header "Pods-Newspedia-umbrella.h"
-
-  export *
-  module * { export * }
-}
