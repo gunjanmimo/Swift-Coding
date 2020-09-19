@@ -21,7 +21,9 @@ struct ContentView: View {
                     }
                 }   
             }
-            .navigationBarTitle("Hacker News")
+             .navigationBarTitle(Text("News"), displayMode: .inline)
+            .edgesIgnoringSafeArea(.all)
+            
         }
         .onAppear {
             self.netWorkManager.fetchData()
