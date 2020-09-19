@@ -16,16 +16,19 @@ struct ContentView: View {
         NavigationView{
             
             List (networkManager.posts){ post in
-                VStack{
-                    Image("car").resizable().frame(width: 380, height: 200, alignment: .center).cornerRadius(25)
-                    
-                    Text(post.title).bold().font(.system(size: 22))
-                    Spacer()
-//                    HStack{
-//                        // Text(post.id).bold()
-//                        //Text(post.content)
-//                    }
+                NavigationLink(destination: DetailView(url: post.url)) {
+                    VStack{
+                        Image("car").resizable().frame(width: 350, height: 200, alignment: .center).cornerRadius(25)
+                        
+                        Text(post.title).bold().font(.system(size: 22))
+                        Spacer()
+                        HStack{
+                            // Text(post.id).bold()
+                            Text(post.description!)
+                        }
+                    }
                 }
+                
                 
             }
             .navigationBarTitle("News")
@@ -42,10 +45,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct Post: Identifiable {
-    let id:String
-    let title:String
-    let content:String
-    let url:String
-}
 

@@ -9,7 +9,7 @@
 import Foundation
 
 class NetworkManager:ObservableObject {
-    @Published var posts = [Article]()
+    @Published var posts = [Post]()
     
     func fetchData(){
         if let url = URL(string: "https://newsapi.org/v2/everything?q=covid&from=2020-09-18&to=2020-09-18&sortBy=popularity&apiKey=fe0771a2c1a6435f9cc27bd41bf2109f"){
